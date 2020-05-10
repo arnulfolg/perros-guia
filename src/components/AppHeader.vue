@@ -18,24 +18,54 @@
 				<li>
 					<router-link to="/servicios">Servicios</router-link>
 					<ul>
-						<li><router-link to="/servicios/entranamiento">Entranamiento</router-link></li>
-						<li><router-link to="/servicios/solicitar">Solicitar</router-link></li>
+						<li>
+							<router-link to="/servicios/entranamiento">
+								Entranamiento
+							</router-link>
+						</li>
+						<li>
+							<router-link to="/servicios/solicitar">
+								Solicitar
+							</router-link>
+						</li>
 						<li>
 							<router-link to="/servicios/adopcion">Adopcion</router-link>
 							<ul>
-								<li><router-link to="/servicios/adopcion/definitiva">Definitiva</router-link></li>
-								<li><router-link to="/servicios/adopcion/temporal">Temporal</router-link></li>
-								<li><router-link to="/servicios/adopcion/donacion">Donacion</router-link></li>
+								<li>
+									<router-link to="/servicios/adopcion/definitiva">
+										Definitiva
+									</router-link>
+								</li>
+								<li>
+									<router-link to="/servicios/adopcion/temporal">
+										Temporal
+									</router-link>
+								</li>
+								<li>
+									<router-link to="/servicios/adopcion/donacion">
+										Donacion
+									</router-link>
+								</li>
 							</ul>
 						</li>
-						<li><router-link to="/servicios/rehabilitacion">Rehabilitación</router-link></li>
+						<li>
+							<router-link to="/servicios/rehabilitacion">
+								Rehabilitación
+							</router-link>
+						</li>
 					</ul>
 				</li>
 				<li>
 					<router-link to="/conocenos">Conócenos</router-link>
 					<ul>
-						<li><router-link to="/conocenos/voluntariado">Voluntariado</router-link></li>
-						<li><router-link to="/conocenos/donativos">Donativos</router-link></li>
+						<li>
+							<router-link to="/conocenos/voluntariado">
+								Voluntariado
+							</router-link>
+						</li>
+						<li>
+							<router-link to="/conocenos/donativos">Donativos</router-link>
+						</li>
 					</ul>
 				</li>
 				<li><router-link to="/contacto">Contacto</router-link></li>
