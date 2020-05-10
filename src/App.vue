@@ -30,6 +30,15 @@ export default {
 	--main-heading-color: #42b983;
 }
 
+html {
+	box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+	box-sizing: inherit;
+}
+
 .container {
 	display: grid;
 	grid-template-rows: 210px 1fr 350px;
