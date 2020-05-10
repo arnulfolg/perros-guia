@@ -11,13 +11,35 @@ const routes = [
 		component: Inicio
 	},
 	{
-		path: "/Acerca",
+		path: "/acerca",
 		name: "Acerca",
 		component: () => import("../views/Acerca.vue")
+		// children: [
+		// 	{
+		// 		path: "/acerca/historia",
+		// 		name: "Mi verdadera Historia",
+		// 		component: () => import("../views/Historia.vue")
+		// 	},
+		// 	{
+		// 		path: "/acerca/mision",
+		// 		name: "Misión - Visión - Valores",
+		// 		component: () => import("../views/Mision.vue")
+		// 	}
+		// ]
+	},
+	{
+		path: "/acerca/historia",
+		name: "Mi verdadera Historia",
+		component: () => import("../views/Historia.vue")
+	},
+	{
+		path: "/acerca/mision",
+		name: "Misión - Visión - Valores",
+		component: () => import("../views/Mision.vue")
 	},
 	{
 		path: "/Servicios",
-		name: "Servicios",
+		name: "Buenos Servicios",
 		component: () => import("../views/Servicios.vue")
 	},
 	{

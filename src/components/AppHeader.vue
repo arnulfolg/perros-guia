@@ -6,16 +6,24 @@
 		</section>
 		<section class="header_navigation--background"></section>
 		<nav class="header_navigation">
-			<router-link to="/">Home</router-link> |
-			<router-link to="/acerca">Acerca</router-link> |
-			<router-link to="/conocenos">Conócenos</router-link> |
-			<router-link to="/servicios">Servicios</router-link> |
-			<router-link to="/contacto">Contacto</router-link>
+			<ul>
+				<li><router-link to="/">Home</router-link></li>
+				<li>
+					<router-link to="/acerca">Acerca</router-link>
+					<ul>
+						<li><router-link to="/acerca/historia">Historia</router-link></li>
+						<li><router-link to="/acerca/mision">Mision</router-link></li>
+					</ul>
+				</li>
+				<li><router-link to="/conocenos">Conócenos</router-link></li>
+				<li><router-link to="/servicios">Servicios</router-link></li>
+				<li><router-link to="/contacto">Contacto</router-link></li>
+			</ul>
 		</nav>
 	</header>
 </template>
 
-<style>
+<style lang="scss">
 header.escuela_header {
 	display: grid;
 	grid-template-rows: 160px 50px;
@@ -34,6 +42,14 @@ section.header_logo {
 nav.header_navigation {
 	background-color: var(--color-chocolate);
 	grid-area: header_navigation;
+
+	ul {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: nowrap;
+		justify-content: flex-start;
+		align-content: stretch;
+	}
 }
 section.header_navigation--background {
 	background-color: var(--color-chocolate);
