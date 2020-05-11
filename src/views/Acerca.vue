@@ -27,15 +27,4 @@ export default {
 }
 </script>
 
-<style lang="scss">
-.section_container_row {
-	display: grid;
-	grid-template-columns: 1fr 960px 1fr;
-	align-items: stretch;
-	justify-items: stretch;
-
-	&--content {
-		grid-column: 2 / 3;
-	}
-}
-</style>
+<style lang="scss"></style>
