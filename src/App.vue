@@ -1,9 +1,9 @@
 <template>
 	<section class="container">
 		<AppHeader />
-		<section class="escuela_main">
+		<main class="escuela_main">
 			<router-view />
-		</section>
+		</main>
 		<AppFooter />
 	</section>
 </template>
@@ -47,7 +47,6 @@ html {
 		"escuela_header escuela_header escuela_header"
 		"escuela_main escuela_main escuela_main"
 		"escuela_footer escuela_footer escuela_footer";
-	grid-gap: 16px;
 	align-items: stretch;
 	justify-items: stretch;
 }
@@ -56,11 +55,77 @@ header.escuela_header {
 	grid-area: escuela_header;
 }
 
-section.escuela_main {
+main.escuela_main {
 	grid-area: escuela_main;
+
+	.section_container {
+		display: grid;
+		grid-gap: 16px;
+	}
+
+	.section_container_row--content {
+		padding: 40px 10px;
+	}
 }
 
 footer.escuela_footer {
 	grid-area: escuela_footer;
+}
+
+h1 {
+	font-family: Helvetica;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 61.0352px;
+	line-height: 84px;
+}
+h2 {
+	font-family: Helvetica;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 48.8281px;
+	line-height: 56px;
+}
+h3 {
+	font-family: Helvetica;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 39.0625px;
+	line-height: 56px;
+}
+h4 {
+	font-family: Helvetica;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 31.25px;
+	line-height: 56px;
+}
+h5 {
+	font-family: Helvetica;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 25px;
+	line-height: 28px;
+}
+h6 {
+	font-family: Helvetica;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 20px;
+	line-height: 28px;
+}
+p {
+	font-family: Helvetica;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 20px;
+	line-height: 28px;
+}
+a {
+	font-family: Helvetica;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 20px;
+	line-height: 28px;
 }
 </style>

@@ -4,7 +4,7 @@
 			<router-link to="/">Home</router-link>
 			<a href="#"> Solicitar perro guía</a>
 		</section>
-		<section class="header_navigation--background"></section>
+		<div class="header_navigation--background"></div>
 		<nav class="header_navigation">
 			<ul>
 				<li><router-link to="/">Home</router-link></li>
@@ -144,7 +144,7 @@ nav.header_navigation {
 		}
 	}
 }
-section.header_navigation--background {
+div.header_navigation--background {
 	background-color: var(--color-chocolate);
 	grid-column: 1 / -1;
 	grid-row: 2 / -1;

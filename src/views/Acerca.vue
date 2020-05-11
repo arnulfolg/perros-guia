@@ -1,10 +1,14 @@
 <template>
-	<div class="about">
-		<h1>Acerca</h1>
+	<section class="section_container">
+		<section class="section_container_row">
+			<section class="section_container_row--content">
+				<h1>Acerca</h1>
+			</section>
+		</section>
 		<Columns1 title="Columna 1" />
 		<Columns2 title="Columna 2" />
 		<Columns3 title="Columna 3" />
-	</div>
+	</section>
 </template>
 
 <script>
@@ -22,3 +26,16 @@ export default {
 	}
 }
 </script>
+
+<style lang="scss">
+.section_container_row {
+	display: grid;
+	grid-template-columns: 1fr 960px 1fr;
+	align-items: stretch;
+	justify-items: stretch;
+
+	&--content {
+		grid-column: 2 / 3;
+	}
+}
+</style>
