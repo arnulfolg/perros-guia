@@ -45,7 +45,7 @@ html {
 	grid-template-columns: 1fr 960px 1fr;
 	grid-template-areas:
 		"escuela_header escuela_header escuela_header"
-		". escuela_main ."
+		"escuela_main escuela_main escuela_main"
 		"escuela_footer escuela_footer escuela_footer";
 	grid-gap: 16px;
 	align-items: stretch;
