@@ -1,21 +1,18 @@
 <template>
-	<section class="section_container_row">
+	<section class="section_container_row section_container_row--color-chocolate">
 		<section class="section_container_row--content">
 			<h2>{{ title }}</h2>
-			<p>
-				Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius blanditiis
-				tempore nisi debitis id vel, explicabo error beatae est porro deleniti
-				excepturi ipsum ex praesentium unde inventore repellat? Debitis, qui!
-			</p>
+			<section v-html="content"></section>
 		</section>
 	</section>
 </template>
 
 <script>
 export default {
-	name: "C1",
+	name: "One-Column",
 	props: {
-		title: String
+		title: { type: String, required: true },
+		content: { type: String, required: true }
 	}
 }
 </script>
@@ -23,6 +20,11 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
 section.section_container_row {
-	background-color: gray;
+	background-color: var(--color-chocolate);
+
+	h2,
+	p {
+		color: var(--color-white);
+	}
 }
 </style>

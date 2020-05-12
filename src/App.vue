@@ -22,6 +22,8 @@ export default {
 </script>
 
 <style lang="scss">
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&display=swap");
+
 :root {
 	--main-app-color: #191110;
 	--color-chocolate: #191110;
@@ -84,59 +86,94 @@ footer.escuela_footer {
 }
 
 h1 {
-	font-family: Helvetica;
+	color: var(--color-chocolate);
+	font-family: "Fira Sans", sans-serif;
 	font-style: normal;
 	font-weight: 600;
 	font-size: 61.0352px;
 	line-height: 84px;
 }
 h2 {
-	font-family: Helvetica;
+	color: var(--color-chocolate);
+	font-family: "Fira Sans", sans-serif;
 	font-style: normal;
 	font-weight: 600;
 	font-size: 48.8281px;
 	line-height: 56px;
+	margin-bottom: 10px;
 }
 h3 {
-	font-family: Helvetica;
+	color: var(--color-chocolate);
+	font-family: "Fira Sans", sans-serif;
 	font-style: normal;
 	font-weight: 600;
 	font-size: 39.0625px;
 	line-height: 56px;
+	margin-bottom: 10px;
 }
 h4 {
-	font-family: Helvetica;
+	color: var(--color-chocolate);
+	font-family: "Fira Sans", sans-serif;
 	font-style: normal;
 	font-weight: 600;
 	font-size: 31.25px;
 	line-height: 56px;
+	margin-bottom: 10px;
 }
 h5 {
-	font-family: Helvetica;
+	color: var(--color-chocolate);
+	font-family: "Fira Sans", sans-serif;
 	font-style: normal;
 	font-weight: 600;
 	font-size: 25px;
 	line-height: 28px;
+	margin-bottom: 10px;
 }
 h6 {
-	font-family: Helvetica;
+	color: var(--color-chocolate);
+	font-family: "Fira Sans", sans-serif;
 	font-style: normal;
 	font-weight: 600;
 	font-size: 20px;
 	line-height: 28px;
+	margin-bottom: 10px;
 }
-p {
-	font-family: Helvetica;
+p,
+ul {
+	color: var(--color-chocolate);
+	font-family: "Fira Sans", sans-serif;
 	font-style: normal;
-	font-weight: normal;
+	font-weight: 300;
 	font-size: 20px;
 	line-height: 28px;
+	margin-bottom: 10px;
+
+	&:last-child {
+		margin-bottom: 0;
+	}
 }
 a {
-	font-family: Helvetica;
+	color: var(--color-chocolate);
+	font-family: "Fira Sans", sans-serif;
 	font-style: normal;
-	font-weight: normal;
+	font-weight: 300;
 	font-size: 20px;
 	line-height: 28px;
+}
+.section_container_row ul li {
+	list-style-position: inside;
+	list-style-type: disc;
+}
+.section_container_row--color-chocolate {
+	h2,
+	h3,
+	h4,
+	h5,
+	h6,
+	p,
+	a,
+	ul {
+		color: var(--color-white);
+	}
 }
 </style>
