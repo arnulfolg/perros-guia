@@ -34,6 +34,7 @@ export default {
 
 html {
 	box-sizing: border-box;
+	font-size: 12px;
 }
 *,
 *:before,
@@ -44,7 +45,7 @@ html {
 .container {
 	display: grid;
 	grid-template-rows: 210px 1fr 350px;
-	grid-template-columns: 1fr 960px 1fr;
+	grid-template-columns: minmax(10px, 1fr) minmax(auto, 960px) minmax(10px, 1fr);
 	grid-template-areas:
 		"escuela_header escuela_header escuela_header"
 		"escuela_main escuela_main escuela_main"
@@ -71,7 +72,10 @@ main.escuela_main {
 
 	.section_container_row {
 		display: grid;
-		grid-template-columns: 1fr 960px 1fr;
+		grid-template-columns: minmax(10px, 1fr) minmax(auto, 960px) minmax(
+				10px,
+				1fr
+			);
 		align-items: stretch;
 		justify-items: stretch;
 
@@ -90,7 +94,7 @@ h1 {
 	font-family: "Fira Sans", sans-serif;
 	font-style: normal;
 	font-weight: 600;
-	font-size: 61.0352px;
+	font-size: 5rem;
 	line-height: 84px;
 }
 h2 {
@@ -98,7 +102,7 @@ h2 {
 	font-family: "Fira Sans", sans-serif;
 	font-style: normal;
 	font-weight: 600;
-	font-size: 48.8281px;
+	font-size: 3.5rem;
 	line-height: 56px;
 	margin-bottom: 10px;
 }
@@ -107,7 +111,7 @@ h3 {
 	font-family: "Fira Sans", sans-serif;
 	font-style: normal;
 	font-weight: 600;
-	font-size: 39.0625px;
+	font-size: 2.8rem;
 	line-height: 56px;
 	margin-bottom: 10px;
 }
@@ -116,7 +120,7 @@ h4 {
 	font-family: "Fira Sans", sans-serif;
 	font-style: normal;
 	font-weight: 600;
-	font-size: 31.25px;
+	font-size: 2.5rem;
 	line-height: 56px;
 	margin-bottom: 10px;
 }
@@ -125,7 +129,7 @@ h5 {
 	font-family: "Fira Sans", sans-serif;
 	font-style: normal;
 	font-weight: 600;
-	font-size: 25px;
+	font-size: 2rem;
 	line-height: 28px;
 	margin-bottom: 10px;
 }
@@ -134,7 +138,7 @@ h6 {
 	font-family: "Fira Sans", sans-serif;
 	font-style: normal;
 	font-weight: 600;
-	font-size: 20px;
+	font-size: 1.6rem;
 	line-height: 28px;
 	margin-bottom: 10px;
 }
@@ -144,7 +148,7 @@ ul {
 	font-family: "Fira Sans", sans-serif;
 	font-style: normal;
 	font-weight: 300;
-	font-size: 20px;
+	font-size: 1.6rem;
 	line-height: 28px;
 	margin-bottom: 10px;
 
@@ -175,5 +179,14 @@ a {
 	ul {
 		color: var(--color-white);
 	}
+}
+
+a.global-link {
+	background-color: var(--color-chocolate);
+	color: var(--color-white);
+	height: 50px;
+	display: inline-block;
+	padding: 1rem 3rem;
+	text-decoration: none;
 }
 </style>

@@ -2,7 +2,9 @@
 	<header class="escuela_header">
 		<section class="header_logo">
 			<router-link to="/">Home</router-link>
-			<a href="#"> Solicitar perro guía</a>
+			<router-link to="/servicios/solicitar" class="global-link">
+				Solicitar Perro Guía
+			</router-link>
 		</section>
 		<div class="header_navigation--background"></div>
 		<nav class="header_navigation">
@@ -78,8 +80,7 @@
 header.escuela_header {
 	display: grid;
 	grid-template-rows: 160px 50px;
-	grid-template-columns: subgrid;
-	/* grid-template-columns: 1fr 960px 1fr; */
+	grid-template-columns: minmax(10px, 1fr) minmax(auto, 960px) minmax(10px, 1fr);
 	grid-template-areas:
 		". header_logo ."
 		". header_navigation .";
