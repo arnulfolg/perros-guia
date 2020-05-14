@@ -30,6 +30,7 @@ export default {
 	--color-dark-red: #53131e;
 	--color-white: #fffffc;
 	--main-heading-color: #42b983;
+	--main-gray: gray;
 }
 
 html {
@@ -184,9 +185,13 @@ a {
 a.global-link {
 	background-color: var(--color-chocolate);
 	color: var(--color-white);
-	height: 50px;
+	height: 44px;
 	display: inline-block;
 	padding: 1rem 3rem;
 	text-decoration: none;
+
+	&--small {
+		height: 40px;
+	}
 }
 </style>

@@ -27,42 +27,42 @@ const routes = [
 	},
 	{
 		path: "/servicios",
-		name: "Buenos Servicios",
+		name: "Servicios",
 		component: () => import("../views/Servicios.vue")
 	},
 	{
 		path: "/servicios/entranamiento",
-		name: "Buenos Servicios",
+		name: "Perros en Entrenamiento",
 		component: () => import("../views/servicios/Entrenamiento.vue")
 	},
 	{
 		path: "/servicios/solicitar",
-		name: "Buenos Servicios",
+		name: "Solicitar un Perro Guía",
 		component: () => import("../views/servicios/Solicitar.vue")
 	},
 	{
 		path: "/servicios/adopcion",
-		name: "Buenos Servicios",
+		name: "Adoptar un Perro Guía",
 		component: () => import("../views/servicios/Adopcion.vue")
 	},
 	{
 		path: "/servicios/adopcion/definitiva",
-		name: "Buenos Servicios",
+		name: "Adopción Definitiva",
 		component: () => import("../views/servicios/adopcion/Definitiva.vue")
 	},
 	{
 		path: "/servicios/adopcion/temporal",
-		name: "Buenos Servicios",
+		name: "Adopción Temporal",
 		component: () => import("../views/servicios/adopcion/Temporal.vue")
 	},
 	{
 		path: "/servicios/adopcion/donacion",
-		name: "Buenos Servicios",
+		name: "Adopción Donación",
 		component: () => import("../views/servicios/adopcion/Donacion.vue")
 	},
 	{
 		path: "/servicios/rehabilitacion",
-		name: "Buenos Servicios",
+		name: "Rehabilitación",
 		component: () => import("../views/servicios/Rehabilitacion.vue")
 	},
 	{
@@ -72,12 +72,12 @@ const routes = [
 	},
 	{
 		path: "/Conocenos/voluntariado",
-		name: "Conocenos",
+		name: "Voluntariado",
 		component: () => import("../views/conocenos/Voluntariado.vue")
 	},
 	{
 		path: "/Conocenos/donativos",
-		name: "Conocenos",
+		name: "Donativos",
 		component: () => import("../views/conocenos/Donativos.vue")
 	},
 	{
