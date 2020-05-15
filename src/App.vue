@@ -164,6 +164,10 @@ a {
 	font-weight: 300;
 	font-size: 20px;
 	line-height: 28px;
+
+	&:hover {
+		color: var(--color-dark-red);
+	}
 }
 img.image {
 	width: 100%;
@@ -197,9 +201,14 @@ a.global-link {
 	background-color: var(--color-chocolate);
 	color: var(--color-white);
 	height: 44px;
-	display: inline-block;
-	padding: 1rem 3rem;
+	padding: 0 3rem;
+	display: inline-flex;
+	align-items: center;
 	text-decoration: none;
+
+	&:hover {
+		background-color: var(--color-dark-red);
+	}
 
 	&--small {
 		height: 40px;

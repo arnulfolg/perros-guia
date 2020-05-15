@@ -1,7 +1,9 @@
 <template>
 	<header class="escuela_header">
 		<section class="header_logo">
-			<router-link to="/">Home</router-link>
+			<router-link to="/">
+				<img src="../assets/logo/logo-blue.png" alt="" />
+			</router-link>
 			<router-link to="/servicios/solicitar" class="global-link">
 				Solicitar Perro Guía
 			</router-link>
@@ -90,6 +92,12 @@ header.escuela_header {
 
 section.header_logo {
 	grid-area: header_logo;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	align-content: center;
+	align-items: center;
 }
 nav.header_navigation {
 	background-color: var(--color-chocolate);
@@ -107,11 +115,18 @@ nav.header_navigation {
 		li {
 			position: relative;
 			height: 50px;
-			padding: 15px;
+			display: inline-flex;
+			align-content: center;
+			align-items: center;
 
 			a {
+				height: 50px;
+				padding: 0 3rem;
 				color: var(--color-white);
 				text-decoration: none;
+				display: inline-flex;
+				align-content: center;
+				align-items: center;
 			}
 
 			&:hover {
