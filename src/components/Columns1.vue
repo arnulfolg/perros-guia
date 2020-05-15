@@ -20,8 +20,6 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
 section.section_container_row {
-	background-color: var(--color-chocolate);
-
 	h2,
 	p {
 		color: var(--color-white);

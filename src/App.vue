@@ -165,11 +165,22 @@ a {
 	font-size: 20px;
 	line-height: 28px;
 }
+img.image {
+	width: 100%;
+}
 .section_container_row ul li {
 	list-style-position: inside;
 	list-style-type: disc;
 }
 .section_container_row--color-chocolate {
+	background-color: var(--color-chocolate);
+}
+.section_container_row--dark-red {
+	background-color: var(--color-dark-red);
+}
+.section_container_row--color-chocolate,
+.section_container_row--dark-red {
+	h1,
 	h2,
 	h3,
 	h4,
