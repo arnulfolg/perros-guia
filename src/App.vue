@@ -45,7 +45,7 @@ html {
 
 .container {
 	display: grid;
-	grid-template-rows: 210px 1fr 350px;
+	grid-template-rows: 210px 1fr minmax(350px, auto);
 	grid-template-columns: minmax(10px, 1fr) minmax(auto, 960px) minmax(10px, 1fr);
 	grid-template-areas:
 		"escuela_header escuela_header escuela_header"
