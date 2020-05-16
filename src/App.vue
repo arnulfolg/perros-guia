@@ -17,6 +17,11 @@ export default {
 	components: {
 		AppFooter,
 		AppHeader
+	},
+	pages: {
+		entry: "main.js",
+		title: "Título bonito",
+		template: "../public/index.html"
 	}
 }
 </script>
