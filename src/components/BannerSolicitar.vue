@@ -5,7 +5,11 @@
 				<h2>Solicita un Perro Guía</h2>
 			</section>
 			<section class="section_container_row--content--columns content-left">
-				<img src="../assets/logo.png" alt="" />
+				<img
+					src="../assets/images/solicitar-perro-guia.png"
+					alt=""
+					class="image"
+				/>
 			</section>
 			<section class="section_container_row--content--columns content-right">
 				<p>

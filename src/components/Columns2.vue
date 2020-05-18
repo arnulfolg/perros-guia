@@ -9,7 +9,7 @@
 				class="section_container_row--content--image image"
 				:class="image_pos"
 			>
-				<img :src="image_src" :alt="image_alt" loading="lazy" />
+				<img :src="image_src" :alt="image_alt" class="image" loading="lazy" />
 			</section>
 		</section>
 	</section>

@@ -161,6 +161,10 @@ ul {
 	&:last-child {
 		margin-bottom: 0;
 	}
+
+	.text_bold {
+		font-weight: bold;
+	}
 }
 a {
 	color: var(--color-chocolate);

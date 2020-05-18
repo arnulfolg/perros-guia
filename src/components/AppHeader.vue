@@ -13,14 +13,14 @@
 			<ul>
 				<li><router-link to="/">Home</router-link></li>
 				<li>
-					<router-link to="/acerca">Acerca</router-link>
+					<router-link to="#">Acerca</router-link>
 					<ul>
 						<li><router-link to="/acerca/historia">Historia</router-link></li>
 						<li><router-link to="/acerca/mision">Mision</router-link></li>
 					</ul>
 				</li>
 				<li>
-					<router-link to="/servicios">Servicios</router-link>
+					<router-link to="#">Servicios</router-link>
 					<ul>
 						<li>
 							<router-link to="/servicios/entranamiento">
@@ -60,7 +60,7 @@
 					</ul>
 				</li>
 				<li>
-					<router-link to="/conocenos">Conócenos</router-link>
+					<router-link to="#">Conócenos</router-link>
 					<ul>
 						<li>
 							<router-link to="/conocenos/voluntariado">
