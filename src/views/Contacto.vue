@@ -84,6 +84,13 @@ button.global_button {
 		width: 100%;
 		padding: 1rem;
 		resize: none;
+		border: 1px solid var(--color-chocolate);
+		border-radius: 8px;
+
+		&:focus {
+			border: 2.5px solid var(--color-chocolate);
+			border-radius: 8px;
+		}
 	}
 
 	input {
