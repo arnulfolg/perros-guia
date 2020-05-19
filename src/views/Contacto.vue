@@ -16,6 +16,18 @@
 				</p>
 			</section>
 			<section class="section_container_row--content">
+				<MglMap
+					:accessToken="accessToken"
+					:mapStyle.sync="mapStyle"
+					:center="mapCoordinates"
+					:zoom="mapZoom"
+					class="mapbox_map"
+				>
+					<MglMarker :coordinates="mapCoordinates" :color="markerColor" />
+				</MglMap>
+			</section>
+			<section class="section_container_row--content">
+				<h2>Mándanos un mensaje</h2>
 				<form action="#">
 					<section class="form_item">
 						<label for="nombre">Nombre:</label>
@@ -46,7 +58,38 @@
 	</section>
 </template>
 
+<script>
+// @ is an alias to /src
+import { MglMap, MglMarker } from "vue-mapbox"
+import Mapbox from "mapbox-gl"
+
+export default {
+	components: {
+		MglMap,
+		MglMarker
+	},
+	data() {
+		return {
+			accessToken:
+				"pk.eyJ1IjoiYXJudWxmb2xvcmVkbyIsImEiOiJja2FlOG1xNTMwaGZxMnJsZHRmMWcxNjVvIn0.NbR1xWBxS-SAy1rvjdp4Qg",
+			mapStyle: "mapbox://styles/mapbox/streets-v11",
+			mapCoordinates: [-99.1032664, 19.3004346],
+			mapZoom: 14,
+			markerColor: "#235dad"
+		}
+	},
+
+	created() {
+		this.mapbox = Mapbox
+	}
+}
+</script>
+
 <style lang="scss">
+.mapbox_map {
+	width: 100%;
+	height: 300px;
+}
 form {
 	width: 100%;
 }
