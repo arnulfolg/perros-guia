@@ -12,6 +12,7 @@
     "mapbox-gl": "^1.10.1",
     "reset-css": "^5.0.1",
     "vue": "^2.6.11",
+    "vue-carousel": "^0.18.0",
     "vue-mapbox": "^0.4.1",
     "vue-router": "^3.1.6"
   },

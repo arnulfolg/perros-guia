@@ -2,7 +2,43 @@
 	<section class="section_container">
 		<section class="section_container_row">
 			<section class="section_container_row--content">
-				<img alt="Vue logo" src="../assets/logo.png" />
+				<Carousel
+					:autoplay="true"
+					:autoplayTimeout="10000"
+					:autoplayHoverPause="false"
+					:perPage="1"
+					:scrollPerPage="true"
+					:navigationEnabled="true"
+					:navigationNextLabel="label_next"
+					:navigationPrevLabel="label_prev"
+					:paginationActiveColor="color_active"
+					:paginationColor="color_default"
+				>
+					<Slide>
+						<img
+							src="../assets/images/banner_perro_guia_con_dueño.png"
+							alt="Perro guía con su dueño, en un atardecer"
+						/>
+					</Slide>
+					<Slide>
+						<img
+							src="../assets/images/pareja_ciegos.png"
+							alt="Pareja de personas mayores con impedimentos visuales"
+						/>
+					</Slide>
+					<Slide>
+						<img
+							src="../assets/images/perro_observando_izquierda.png"
+							alt="Perro observando al lado izquierdo"
+						/>
+					</Slide>
+					<Slide>
+						<img
+							src="../assets/images/super_perro.png"
+							alt="Perro vestido con camisa de superman"
+						/>
+					</Slide>
+				</Carousel>
 			</section>
 		</section>
 		<Columns3
@@ -65,12 +101,21 @@
 // @ is an alias to /src
 import Columns3 from "@/components/Columns3.vue"
 import BannerSolicitar from "@/components/BannerSolicitar.vue"
+import { Carousel, Slide } from "vue-carousel"
 
 export default {
 	name: "Inicio",
 	components: {
 		Columns3,
-		BannerSolicitar
+		BannerSolicitar,
+		Carousel,
+		Slide
+	},
+	props: {
+		label_prev: { type: String, default: "˂" },
+		label_next: { type: String, default: "˃" },
+		color_default: { type: String, default: "#c7c2b3" },
+		color_active: { type: String, default: "#191110" }
 	}
 }
 </script>
@@ -133,6 +178,32 @@ section.section_map--info--item {
 
 	p.description {
 		grid-area: info-description;
+	}
+}
+section.section_container_row section.section_container_row--content {
+	padding-left: 0;
+	padding-right: 0;
+}
+.VueCarousel {
+	img {
+		width: 100%;
+	}
+
+	.VueCarousel-dot-container {
+		margin: 0 !important;
+	}
+
+	.VueCarousel-navigation-prev {
+		transform: translateY(-150%) translateX(50%);
+		background-color: var(--main-gray);
+		border-radius: 4px;
+		color: var(--color-chocolate);
+	}
+	.VueCarousel-navigation-next {
+		transform: translateY(-150%) translateX(-50%);
+		background-color: var(--main-gray);
+		border-radius: 4px;
+		color: var(--color-chocolate);
 	}
 }
 </style>
