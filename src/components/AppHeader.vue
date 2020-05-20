@@ -80,6 +80,8 @@
 
 <style lang="scss">
 header.escuela_header {
+	position: static;
+	z-index: 100;
 	display: grid;
 	grid-template-rows: 160px 50px;
 	grid-template-columns: minmax(10px, 1fr) minmax(auto, 960px) minmax(10px, 1fr);
