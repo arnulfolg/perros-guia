@@ -9,8 +9,6 @@
 					:perPage="1"
 					:scrollPerPage="true"
 					:navigationEnabled="true"
-					:navigationNextLabel="label_next"
-					:navigationPrevLabel="label_prev"
 					:paginationActiveColor="color_active"
 					:paginationColor="color_default"
 				>
@@ -112,8 +110,6 @@ export default {
 		Slide
 	},
 	props: {
-		label_prev: { type: String, default: "˂" },
-		label_next: { type: String, default: "˃" },
 		color_default: { type: String, default: "#c7c2b3" },
 		color_active: { type: String, default: "#191110" }
 	}
