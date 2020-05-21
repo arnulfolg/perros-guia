@@ -84,10 +84,16 @@ const routes = [
 		path: "/Contacto",
 		name: "Contacto",
 		component: () => import("../views/Contacto.vue")
+	},
+	{
+		path: "*",
+		name: "PageNotFound",
+		component: () => import("../views/PageNotFound.vue")
 	}
 ]
 
 const router = new VueRouter({
+	mode: "history",
 	routes
 })
 
