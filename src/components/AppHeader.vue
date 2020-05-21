@@ -131,7 +131,9 @@ nav.header_navigation {
 				align-items: center;
 			}
 
-			&:hover {
+			&:hover,
+			&:focus,
+			&:focus-within {
 				background-color: var(--color-dark-red);
 
 				> ul {
