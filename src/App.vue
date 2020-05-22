@@ -36,6 +36,7 @@ export default {
 	--color-white: #fffffc;
 	--main-heading-color: #42b983;
 	--main-gray: gray;
+	--container-size: 1024px;
 }
 
 html {
@@ -51,7 +52,7 @@ html {
 .container {
 	display: grid;
 	grid-template-rows: 210px 1fr minmax(350px, auto);
-	grid-template-columns: minmax(10px, 1fr) minmax(auto, 960px) minmax(10px, 1fr);
+	grid-template-columns: minmax(10px, 1fr) minmax(auto, var(--container-size)) minmax(10px, 1fr);
 	grid-template-areas:
 		"escuela_header escuela_header escuela_header"
 		"escuela_main escuela_main escuela_main"
@@ -78,7 +79,7 @@ main.escuela_main {
 
 	.section_container_row {
 		display: grid;
-		grid-template-columns: minmax(10px, 1fr) minmax(auto, 960px) minmax(
+		grid-template-columns: minmax(10px, 1fr) minmax(auto, var(--container-size)) minmax(
 				10px,
 				1fr
 			);

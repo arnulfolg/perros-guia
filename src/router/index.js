@@ -97,4 +97,8 @@ const router = new VueRouter({
 	routes
 })
 
+router.afterEach(() => {
+	document.activeElement.blur()
+})
+
 export default router

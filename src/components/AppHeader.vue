@@ -17,7 +17,7 @@
 					<router-link to="#">Acerca</router-link>
 					<ul>
 						<li><router-link to="/acerca/historia">Historia</router-link></li>
-						<li><router-link to="/acerca/mision">Mision</router-link></li>
+						<li><router-link to="/acerca/mision">Misión</router-link></li>
 					</ul>
 				</li>
 				<li>
@@ -34,7 +34,7 @@
 							</router-link>
 						</li>
 						<li>
-							<router-link to="/servicios/adopcion">Adopcion</router-link>
+							<router-link to="/servicios/adopcion">Adopción</router-link>
 							<ul>
 								<li>
 									<router-link to="/servicios/adopcion/definitiva">
@@ -48,7 +48,7 @@
 								</li>
 								<li>
 									<router-link to="/servicios/adopcion/donacion">
-										Donacion
+										Donación
 									</router-link>
 								</li>
 							</ul>
@@ -85,7 +85,7 @@ header.escuela_header {
 	z-index: 100;
 	display: grid;
 	grid-template-rows: 160px 50px;
-	grid-template-columns: minmax(10px, 1fr) minmax(auto, 960px) minmax(10px, 1fr);
+	grid-template-columns: minmax(10px, 1fr) minmax(auto, var(--container-size)) minmax(10px, 1fr);
 	grid-template-areas:
 		". header_logo ."
 		". header_navigation .";
@@ -123,6 +123,7 @@ nav.header_navigation {
 	}
 
 	ul {
+		width: min-content;
 		display: flex;
 		flex-direction: row;
 		flex-wrap: nowrap;
@@ -136,6 +137,8 @@ nav.header_navigation {
 		}
 
 		li {
+			width: 100%;
+			justify-content: center;
 			position: relative;
 			height: 50px;
 			display: inline-flex;
