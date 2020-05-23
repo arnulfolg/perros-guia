@@ -175,11 +175,54 @@ a {
 	font-family: "Fira Sans", sans-serif;
 	font-style: normal;
 	font-weight: 300;
-	font-size: 20px;
+	font-size: 1.6rem;
 	line-height: 28px;
 
 	&:hover {
 		color: var(--color-dark-red);
+	}
+}
+
+@media only screen and (max-width: 640px) {
+	h1 {
+		font-size: 3.5rem;
+		line-height: 64px;
+	}
+	h2 {
+		font-size: 3rem;
+		line-height: 46px;
+		margin-bottom: 10px;
+	}
+	h3 {
+		font-size: 2.5rem;
+		line-height: 46px;
+		margin-bottom: 10px;
+	}
+	h4 {
+		font-size: 2.2rem;
+		line-height: 46px;
+		margin-bottom: 10px;
+	}
+	h5 {
+		font-size: 2rem;
+		line-height: 28px;
+		margin-bottom: 10px;
+	}
+	h6 {
+		font-size: 1.6rem;
+		line-height: 28px;
+		margin-bottom: 10px;
+	}
+	p,
+	ul {
+		font-weight: 300;
+		font-size: 1.4rem;
+		line-height: 28px;
+	}
+	a {
+		font-weight: 300;
+		font-size: 20px;
+		line-height: 28px;
 	}
 }
 img.image {

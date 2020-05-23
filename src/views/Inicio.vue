@@ -72,7 +72,7 @@
 					<section class="section_map--info--item">
 						<img src="../assets/envelope.svg" alt="" />
 						<p class="title">Escríbenos:</p>
-						<p class="description">perrosguiaparaciegos@perrosguia.org.mx</p>
+						<p class="description">contacto@perrosguia.org.mx</p>
 					</section>
 				</section>
 				<section class="section_map--image">
