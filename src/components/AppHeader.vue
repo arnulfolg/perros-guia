@@ -12,68 +12,91 @@
 		<nav class="header_navigation">
 			<router-link to="#" class="menu_link">Menú</router-link>
 			<ul>
-				<li><router-link to="/">Home</router-link></li>
+				<li><router-link class="nav_link" exact to="/">Home</router-link></li>
 				<li>
-					<router-link to="#">Acerca</router-link>
+					<router-link class="nav_link" to="/acerca">Acerca</router-link>
 					<ul>
-						<li><router-link to="/acerca/historia">Historia</router-link></li>
-						<li><router-link to="/acerca/mision">Misión</router-link></li>
+						<li>
+							<router-link class="nav_link" to="/acerca/historia"
+								>Historia</router-link
+							>
+						</li>
+						<li>
+							<router-link class="nav_link" to="/acerca/mision"
+								>Misión</router-link
+							>
+						</li>
 					</ul>
 				</li>
 				<li>
-					<router-link to="#">Servicios</router-link>
+					<router-link class="nav_link" to="/servicios">Servicios</router-link>
 					<ul>
 						<li>
-							<router-link to="/servicios/entranamiento">
+							<router-link class="nav_link" to="/servicios/entranamiento">
 								Entranamiento
 							</router-link>
 						</li>
 						<li>
-							<router-link to="/servicios/solicitar">
+							<router-link class="nav_link" to="/servicios/solicitar">
 								Solicitar
 							</router-link>
 						</li>
 						<li>
-							<router-link to="/servicios/adopcion">Adopción</router-link>
+							<router-link class="nav_link" to="/servicios/adopcion"
+								>Adopción</router-link
+							>
 							<ul>
 								<li>
-									<router-link to="/servicios/adopcion/definitiva">
+									<router-link
+										class="nav_link"
+										to="/servicios/adopcion/definitiva"
+									>
 										Definitiva
 									</router-link>
 								</li>
 								<li>
-									<router-link to="/servicios/adopcion/temporal">
+									<router-link
+										class="nav_link"
+										to="/servicios/adopcion/temporal"
+									>
 										Temporal
 									</router-link>
 								</li>
 								<li>
-									<router-link to="/servicios/adopcion/donacion">
+									<router-link
+										class="nav_link"
+										to="/servicios/adopcion/donacion"
+									>
 										Donación
 									</router-link>
 								</li>
 							</ul>
 						</li>
 						<li>
-							<router-link to="/servicios/rehabilitacion">
+							<router-link class="nav_link" to="/servicios/rehabilitacion">
 								Rehabilitación
 							</router-link>
 						</li>
 					</ul>
 				</li>
 				<li>
-					<router-link to="#">Conócenos</router-link>
+					<router-link class="nav_link" to="/conocenos">Conócenos</router-link>
 					<ul>
 						<li>
-							<router-link to="/conocenos/voluntariado">
+							<router-link class="nav_link" to="/conocenos/voluntariado">
 								Voluntariado
 							</router-link>
 						</li>
 						<li>
-							<router-link to="/conocenos/donativos">Donativos</router-link>
+							<router-link class="nav_link" to="/conocenos/donativos"
+								>Donativos</router-link
+							>
 						</li>
 					</ul>
 				</li>
-				<li><router-link to="/contacto">Contacto</router-link></li>
+				<li>
+					<router-link class="nav_link" to="/contacto">Contacto</router-link>
+				</li>
 			</ul>
 		</nav>
 	</header>
@@ -85,7 +108,10 @@ header.escuela_header {
 	z-index: 100;
 	display: grid;
 	grid-template-rows: 160px 50px;
-	grid-template-columns: minmax(10px, 1fr) minmax(auto, var(--container-size)) minmax(10px, 1fr);
+	grid-template-columns: minmax(10px, 1fr) minmax(auto, var(--container-size)) minmax(
+			10px,
+			1fr
+		);
 	grid-template-areas:
 		". header_logo ."
 		". header_navigation .";
@@ -221,5 +247,9 @@ div.header_navigation--background {
 	background-color: var(--color-chocolate);
 	grid-column: 1 / -1;
 	grid-row: 2 / -1;
+}
+
+a.router-link-active.nav_link {
+	background-color: var(--color-dark-red);
 }
 </style>

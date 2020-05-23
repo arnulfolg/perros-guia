@@ -68,7 +68,10 @@ footer.escuela_footer {
 	padding: 2rem;
 	background-color: var(--color-chocolate);
 	display: grid;
-	grid-template-columns: minmax(10px, 1fr) minmax(auto, var(--container-size)) minmax(10px, 1fr);
+	grid-template-columns: minmax(10px, 1fr) minmax(auto, var(--container-size)) minmax(
+			10px,
+			1fr
+		);
 	grid-template-areas: ". footer_content .";
 	align-items: stretch;
 	justify-items: stretch;

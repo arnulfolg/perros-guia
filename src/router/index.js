@@ -66,22 +66,22 @@ const routes = [
 		component: () => import("../views/servicios/Rehabilitacion.vue")
 	},
 	{
-		path: "/Conocenos",
+		path: "/conocenos",
 		name: "Conocenos",
 		component: () => import("../views/Conocenos.vue")
 	},
 	{
-		path: "/Conocenos/voluntariado",
+		path: "/conocenos/voluntariado",
 		name: "Voluntariado",
 		component: () => import("../views/conocenos/Voluntariado.vue")
 	},
 	{
-		path: "/Conocenos/donativos",
+		path: "/conocenos/donativos",
 		name: "Donativos",
 		component: () => import("../views/conocenos/Donativos.vue")
 	},
 	{
-		path: "/Contacto",
+		path: "/contacto",
 		name: "Contacto",
 		component: () => import("../views/Contacto.vue")
 	},
