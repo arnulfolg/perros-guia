@@ -1,4 +1,5 @@
 module.exports = {
+	publicPath: 'https://arnulfolg.github.io/perros-guia/',
 	pages: {
 		index: {
 			entry: "src/main.js",
