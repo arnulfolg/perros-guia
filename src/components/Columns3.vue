@@ -5,7 +5,11 @@
 				<h2>{{ title }}</h2>
 			</section>
 			<section class="section_container_row--content--columns content-left">
-				<img v-if="column_image" :src="require('@/assets/icons/medal.svg')" alt="" />
+				<img
+					v-if="column_image"
+					:src="require('@/assets/icons/medal.svg')"
+					alt=""
+				/>
 				<p>
 					{{ column1_content }}
 				</p>
