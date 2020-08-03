@@ -44,7 +44,7 @@
 			column1_content="Institución de Asistencia Privada fundada para criar, educar, entrenar y donar Perros Guía para Ciegos."
 			column2_content="Brindamos rehabilitación Inclusiva a personas con discapacidad visual."
 			column3_content="La primera escuela de perros guía en México y América Latina."
-			column1_image_src="/school.svg"
+			column1_image_src="../assets/icons/school.svg"
 			column2_image_src="/blind.svg"
 			column3_image_src="/medal.svg"
 			v-bind:column_links="false"
