@@ -1,5 +1,5 @@
 module.exports = {
-	publicPath: "/perros-guia",
+	publicPath: "/perros-guia/",
 	outputDir: "docs",
 	assetsDir: "assets",
 	pages: {
