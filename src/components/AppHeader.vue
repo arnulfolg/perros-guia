@@ -192,7 +192,7 @@ nav.header_navigation {
 					flex-wrap: nowrap;
 					justify-content: flex-start;
 					align-content: stretch;
-					align-items: center;
+					align-items: stretch;
 				}
 			}
 

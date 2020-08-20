@@ -97,7 +97,7 @@ label,
 input,
 textarea,
 button {
-	color: var(--color-chocolate);
+	color: var(--color-dark-red);
 	font-family: "Fira Sans", sans-serif;
 	font-style: normal;
 	font-weight: 300;
@@ -105,7 +105,7 @@ button {
 	line-height: 28px;
 }
 button.global_button {
-	background-color: var(--color-chocolate);
+	background-color: var(--color-dark-red);
 	color: var(--color-white);
 	border: none;
 	height: 44px;

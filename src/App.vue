@@ -30,13 +30,19 @@ export default {
 @import url("https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&display=swap");
 
 :root {
-	--main-app-color: #191110;
-	--color-chocolate: #191110;
-	--color-dark-red: #53131e;
-	--color-white: #fffffc;
-	--main-heading-color: #42b983;
-	--main-gray: gray;
+	--color-chocolate: #2b1d18;
+	--color-dark-red: #a11b20;
+	--color-dark-blue: #2134e2;
+	--color-white: #f3f3f3;
+	--color-black: #141414;
+	--main-heading-color: #12d555;
+	--main-gray: #cac4b0;
 	--container-size: 1024px;
+
+	--title-color: var(--color-dark-blue);
+	--headers-color: var(--color-chocolate);
+	--text-color: var(--color-black);
+	--link-color: var(--color-dark-blue);
 }
 
 html {
@@ -100,7 +106,7 @@ footer.escuela_footer {
 }
 
 h1 {
-	color: var(--color-chocolate);
+	color: var(--title-color);
 	font-family: "Fira Sans", sans-serif;
 	font-style: normal;
 	font-weight: 600;
@@ -108,7 +114,7 @@ h1 {
 	line-height: 84px;
 }
 h2 {
-	color: var(--color-chocolate);
+	color: var(--headers-color);
 	font-family: "Fira Sans", sans-serif;
 	font-style: normal;
 	font-weight: 600;
@@ -117,7 +123,7 @@ h2 {
 	margin-bottom: 10px;
 }
 h3 {
-	color: var(--color-chocolate);
+	color: var(--headers-color);
 	font-family: "Fira Sans", sans-serif;
 	font-style: normal;
 	font-weight: 600;
@@ -126,7 +132,7 @@ h3 {
 	margin-bottom: 10px;
 }
 h4 {
-	color: var(--color-chocolate);
+	color: var(--headers-color);
 	font-family: "Fira Sans", sans-serif;
 	font-style: normal;
 	font-weight: 600;
@@ -135,7 +141,7 @@ h4 {
 	margin-bottom: 10px;
 }
 h5 {
-	color: var(--color-chocolate);
+	color: var(--headers-color);
 	font-family: "Fira Sans", sans-serif;
 	font-style: normal;
 	font-weight: 600;
@@ -144,7 +150,7 @@ h5 {
 	margin-bottom: 10px;
 }
 h6 {
-	color: var(--color-chocolate);
+	color: var(--headers-color);
 	font-family: "Fira Sans", sans-serif;
 	font-style: normal;
 	font-weight: 600;
@@ -154,7 +160,7 @@ h6 {
 }
 p,
 ul {
-	color: var(--color-chocolate);
+	color: var(--text-color);
 	font-family: "Fira Sans", sans-serif;
 	font-style: normal;
 	font-weight: 300;
@@ -171,7 +177,7 @@ ul {
 	}
 }
 a {
-	color: var(--color-chocolate);
+	color: var(--link-color);
 	font-family: "Fira Sans", sans-serif;
 	font-style: normal;
 	font-weight: 300;
@@ -179,7 +185,7 @@ a {
 	line-height: 28px;
 
 	&:hover {
-		color: var(--color-dark-red);
+		color: var(--link-color);
 	}
 }
 
@@ -254,7 +260,7 @@ img.image {
 }
 
 a.global-link {
-	background-color: var(--color-chocolate);
+	background-color: var(--color-dark-blue);
 	color: var(--color-white);
 	height: 44px;
 	padding: 0 3rem;
@@ -263,7 +269,7 @@ a.global-link {
 	text-decoration: none;
 
 	&:hover {
-		background-color: var(--color-dark-red);
+		background-color: var(--color-dark-blue);
 	}
 
 	&--small {
