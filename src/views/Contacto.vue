@@ -42,7 +42,7 @@
 						<input id="asunto" type="text" required />
 					</section>
 					<section class="form_item">
-						<label for="mensaje">Mensaje:</label><br />
+						<label for="mensaje">Mensaje:</label>
 						<textarea
 							id="mensaje"
 							autocomplete="street-address"

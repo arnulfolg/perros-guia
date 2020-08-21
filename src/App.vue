@@ -27,7 +27,7 @@ export default {
 </script>
 
 <style lang="scss">
-@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap");
 
 :root {
 	--color-chocolate: #2b1d18;
@@ -106,67 +106,68 @@ footer.escuela_footer {
 }
 
 h1 {
-	color: var(--title-color);
-	font-family: "Fira Sans", sans-serif;
+	color: var(--headers-color);
+	font-family: "Open Sans", sans-serif;
 	font-style: normal;
 	font-weight: 600;
-	font-size: 5rem;
-	line-height: 84px;
+	font-size: 5.1rem;
+	line-height: 7rem;
 }
 h2 {
 	color: var(--headers-color);
-	font-family: "Fira Sans", sans-serif;
+	font-family: "Open Sans", sans-serif;
 	font-style: normal;
 	font-weight: 600;
-	font-size: 3.5rem;
-	line-height: 56px;
-	margin-bottom: 10px;
+	font-size: 4.1rem;
+	line-height: 5.6rem;
+	margin-bottom: 1rem;
 }
 h3 {
 	color: var(--headers-color);
-	font-family: "Fira Sans", sans-serif;
+	font-family: "Open Sans", sans-serif;
 	font-style: normal;
 	font-weight: 600;
-	font-size: 2.8rem;
-	line-height: 56px;
-	margin-bottom: 10px;
+	font-size: 3.3rem;
+	line-height: 4.5rem;
+	margin-bottom: 1rem;
 }
 h4 {
 	color: var(--headers-color);
-	font-family: "Fira Sans", sans-serif;
+	font-family: "Open Sans", sans-serif;
 	font-style: normal;
 	font-weight: 600;
-	font-size: 2.5rem;
-	line-height: 56px;
-	margin-bottom: 10px;
+	font-size: 2.6rem;
+	line-height: 3.5rem;
+	margin-bottom: 1rem;
 }
 h5 {
 	color: var(--headers-color);
-	font-family: "Fira Sans", sans-serif;
+	font-family: "Open Sans", sans-serif;
 	font-style: normal;
 	font-weight: 600;
-	font-size: 2rem;
-	line-height: 28px;
-	margin-bottom: 10px;
+	font-size: 2.1rem;
+	line-height: 2.9rem;
+	margin-bottom: 1rem;
 }
 h6 {
 	color: var(--headers-color);
-	font-family: "Fira Sans", sans-serif;
+	font-family: "Open Sans", sans-serif;
 	font-style: normal;
 	font-weight: 600;
-	font-size: 1.6rem;
-	line-height: 28px;
-	margin-bottom: 10px;
+	font-size: 1.7rem;
+	line-height: 2.4rem;
+	margin-bottom: 1rem;
 }
 p,
-ul {
+ul,
+ol {
 	color: var(--text-color);
-	font-family: "Fira Sans", sans-serif;
+	font-family: "Open Sans", sans-serif;
 	font-style: normal;
 	font-weight: 300;
-	font-size: 1.6rem;
-	line-height: 28px;
-	margin-bottom: 10px;
+	font-size: 1.7rem;
+	line-height: 2.4rem;
+	margin-bottom: 1rem;
 
 	&:last-child {
 		margin-bottom: 0;
@@ -178,7 +179,7 @@ ul {
 }
 a {
 	color: var(--link-color);
-	font-family: "Fira Sans", sans-serif;
+	font-family: "Open Sans", sans-serif;
 	font-style: normal;
 	font-weight: 300;
 	font-size: 1.6rem;
@@ -190,53 +191,22 @@ a {
 }
 
 @media only screen and (max-width: 640px) {
-	h1 {
-		font-size: 3.5rem;
-		line-height: 64px;
-	}
-	h2 {
-		font-size: 3rem;
-		line-height: 46px;
-		margin-bottom: 10px;
-	}
-	h3 {
-		font-size: 2.5rem;
-		line-height: 46px;
-		margin-bottom: 10px;
-	}
-	h4 {
-		font-size: 2.2rem;
-		line-height: 46px;
-		margin-bottom: 10px;
-	}
-	h5 {
-		font-size: 2rem;
-		line-height: 28px;
-		margin-bottom: 10px;
-	}
-	h6 {
-		font-size: 1.6rem;
-		line-height: 28px;
-		margin-bottom: 10px;
-	}
-	p,
-	ul {
-		font-weight: 300;
-		font-size: 1.4rem;
-		line-height: 28px;
-	}
-	a {
-		font-weight: 300;
-		font-size: 20px;
-		line-height: 28px;
+	html {
+		font-size: 10px;
 	}
 }
 img.image {
 	width: 100%;
 }
-.section_container_row ul li {
-	list-style-position: inside;
-	list-style-type: disc;
+.section_container_row {
+	ul li {
+		list-style-position: inside;
+		list-style-type: disc;
+	}
+	ol li {
+		list-style-position: inside;
+		list-style-type: decimal;
+	}
 }
 .section_container_row--color-chocolate {
 	background-color: var(--color-chocolate);
